@@ -5,6 +5,9 @@ on:
     - cron: '0 10 * * *' # Triggers the workflow daily at 10:00 AM UTC
   workflow_dispatch: # Allows manual execution of the workflow
 
+permissions:
+  contents: write
+  
 jobs:
   run-weather-script:
     runs-on: ubuntu-latest # Specifies the use of an Ubuntu virtual machine for the workflow
