@@ -1,1 +1,40 @@
-name: Automate Weather Script 
+name: Automating Weather Script
+
+on:
+  schedule:
+    - cron: '0 10 * * *' # Triggers the workflow daily at 10:00 AM UTC
+  workflow_dispatch: # Allows manual execution of the workflow
+
+jobs:
+  run-weather-script:
+    runs-on: ubuntu-latest # Specifies the use of an Ubuntu virtual machine for the workflow
+
+    steps:
+      # Step 1: Clone the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v3 # Uses the checkout action to pull the repository code
+
+      # Step 2: Install dependencies
+      - name: Install Requirements
+        run: |
+          sudo apt-get update # Updates the package list to ensure the latest versions are available
+          sudo apt-get install -y wget # Installs the wget utility to enable script execution
+
+      # Step 3: Execute the weather.sh script
+      - name: Run Weather Script
+        run: ./weather.sh # Executes the weather.sh script, which fetches weather data
+
+      # Step 4: Commit and push updated weather data
+      - name: Commit and Push Changes
+        run: |
+          # Configure the Git user for the commit
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          # Stage the new weather data files
+          git add data/weather/
+          # Create a commit with a timestamped message
+          git commit -m "Automated weather data update [$(date)]"
+          # Push the changes back to the repository
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Uses GitHub's built-in token for authentication
