@@ -2,7 +2,7 @@ name: Automating Weather Script
 
 on:
   schedule:
-    - cron: '0 10 * * *' # Triggers the workflow daily at 10:00 AM UTC
+    - cron: '37 11 * * *' # Triggers the workflow daily at 11:37 UTC
   workflow_dispatch: # Allows manual execution of the workflow
 
 permissions:
