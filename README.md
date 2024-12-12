@@ -1,12 +1,12 @@
-# The module "Computer Infrastructure" 
+# Computer Infrastructure
 
 ![Image_computers](https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Laplacescher_D%C3%A4mon_%28Weltzentrale%29.jpg/640px-Laplacescher_D%C3%A4mon_%28Weltzentrale%29.jpg)
 
-
+This repository contains all my work on the **Computer Infrastructure** module of the [ATU](https://www.atu.ie/) **Higher Diploma in Science in Computing in Data Analytics** course. The repository includes a series of module tasks as well as project implementation. 
 
 ***
 
-# Repository Files Description
+## Repository Files Description
 
 1. **.github/workflows**  
 > **File format:** Directory  
@@ -51,10 +51,35 @@ Contains the report documenting how tasks (1–7) were completed and demonstrate
 
 ### **2. Setup**
 1. Clone the repository:  
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-   cd YOUR_REPOSITORY
-   ```
+  ```bash
+  git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+  cd YOUR_REPOSITORY
+  ```
+2. Set up the required directories:
+  ```
+  data/
+  ├── timestamps/
+  └── weather/
+  ```
+
+If any subdirectory is missing, create it:
+  ```
+  mkdir -p data/timestamps data/weather
+  ```
+3. Make the weather script executable:
+  ```
+  chmod +x weather.sh
+  ```
+4. Install Python dependencies (if required for analysis):
+  ```
+  pip install -r requirements.txt
+  ```
+5. Run the script to fetch weather data manually:
+
+  ```
+  ./weather.sh
+  ```
+
 ***
 
 ## Usage Guide
@@ -68,6 +93,8 @@ Check GitHub Actions logs for successful runs.
 
 ### **For Data Analysis**
 Open the Jupyter Notebook (weather.ipynb) to explore the weather data and learn how it can be processed using Python.
+
+***
 
 ## Author
 
