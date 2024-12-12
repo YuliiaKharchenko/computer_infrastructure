@@ -3,14 +3,14 @@
 ![Image_computers](https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Laplacescher_D%C3%A4mon_%28Weltzentrale%29.jpg/640px-Laplacescher_D%C3%A4mon_%28Weltzentrale%29.jpg)
 
 This repository contains all my work on the **Computer Infrastructure** module of the [ATU](https://www.atu.ie/) **Higher Diploma in Science in Computing in Data Analytics** course. The repository includes a series of module tasks as well as project implementation. 
-The description of the series of tasks and the project are given [here](https://github.com/ianmcloughlin/2425_computer_infrastructure?tab=readme-ov-file#tasks-40).
+The description of the **series of tasks** and **the project** are given [here](https://github.com/ianmcloughlin/2425_computer_infrastructure?tab=readme-ov-file#tasks-40).
 
 ***
 
 ## Work Environment: GitHub Codespaces
 
-All the work for this module was conducted using **GitHub Codespaces**, a cloud-based development environment provided by GitHub. It eliminates the need for local setup and offers a fully configured workspace accessible from any device with internet access.
-**GitHub Codespaces** operates on a **Linux-based infrastructure**, providing a robust, consistent, and flexible environment for software development. Leveraging the power of Linux containers, Codespaces ensures compatibility with a wide range of tools, frameworks, and workflows.
+All the work for this module was conducted using [**GitHub Codespaces**](https://github.com/features/codespaces), a cloud-based development environment provided by [GitHub](https://github.com/). It eliminates the need for local setup and offers a fully configured workspace accessible from any device with internet access.
+**GitHub Codespaces** operates on a [**Linux-based infrastructure**](https://www.redhat.com/en/topics/linux/linux-for-cloud-computing), providing a robust, consistent, and flexible environment for software development. Leveraging the power of Linux containers, Codespaces ensures compatibility with a wide range of tools, frameworks, and workflows.
 
 ### Advantages of GitHub Codespaces 
 
@@ -26,6 +26,26 @@ All the work for this module was conducted using **GitHub Codespaces**, a cloud-
 2. **Script Execution**: Bash scripts, such as `weather.sh`, were executed in the Codespaces terminal to automate tasks like downloading weather data.
 3. **Notebook Editing**: The `weather.ipynb` notebook was created and edited within Codespaces to analyze and summarize the collected data.
 4. **Workflow Testing**: GitHub Actions workflows were tested and debugged in this cloud environment.
+
+***
+
+## Understanding GitHub Actions and YAML Files
+
+### GitHub Actions
+
+[GitHub Actions](https://github.com/features/actions) is a powerful CI/CD (Continuous Integration and Continuous Deployment) tool integrated into GitHub. It allows automating workflows directly in the repositories. With GitHub Actions, you can define tasks that automatically trigger in response to specific events, such as pushing code, creating pull requests, or on a scheduled basis.
+
+For this project, GitHub Actions is used to automate the daily execution of the `weather.sh` script, download weather data, and push the updated data to the repository.
+
+#### Reference [**Quickstart for GitHub Actions**](https://docs.github.com/en/actions/writing-workflows/quickstart)
+
+### YAML File
+
+[YAML (Yet Another Markup Language)](https://www.redhat.com/en/topics/automation/what-is-yaml) is a human-readable configuration file format. It is commonly used to define workflows for GitHub Actions. Each workflow is written in a YAML file, where tasks and steps are specified in a structured format.
+
+In this project, the YAML file named weather-data.yml is located in the .github/workflows/ directory. This file contains all the instructions GitHub Actions needs to execute the weather.sh script, including scheduling, setting up the environment, and pushing the updated data back to the repository.
+
+#### Reference [**Workflow syntax for GitHub Actions**](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions)
 
 ***
 
@@ -65,6 +85,8 @@ Contains the report documenting how tasks (1–7) were completed and demonstrate
 8. **weather.sh**  
 > **File format:** Shell Script  
 > **Description:** Automates the process of downloading and timestamping weather data, saving it to the appropriate directory.
+
+***
 
 ## Getting Started
 
@@ -138,9 +160,5 @@ To analyze the downloaded weather data:
 ## Author
 
 Created by **Yuliia Kharchenko**. 
-
-***
-
-#### END
 
 ***
