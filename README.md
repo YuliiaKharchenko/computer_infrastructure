@@ -3,7 +3,7 @@
 ![Image_computers](https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Laplacescher_D%C3%A4mon_%28Weltzentrale%29.jpg/640px-Laplacescher_D%C3%A4mon_%28Weltzentrale%29.jpg)
 
 This repository contains all my work on the **Computer Infrastructure** module of the [ATU](https://www.atu.ie/) **Higher Diploma in Science in Computing in Data Analytics** course. The repository includes a series of module tasks as well as project implementation. 
-The description of the series of tasks and the project are given [here](https://github.com/ianmcloughlin/2425_computer_infrastructure?tab=readme-ov-file#repository-20).
+The description of the series of tasks and the project are given [here](https://github.com/ianmcloughlin/2425_computer_infrastructure?tab=readme-ov-file#tasks-40).
 
 ***
 
