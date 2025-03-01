@@ -1,6 +1,6 @@
 # Computer Infrastructure
 
-![Image_computers]()
+![Image_computers](./img/CI.jpeg)
 
 This repository contains all my work on the **Computer Infrastructure** module of the [ATU](https://www.atu.ie/) **Higher Diploma in Science in Computing in Data Analytics** course. The repository includes a series of module tasks as well as project implementation. 
 The description of the **series of tasks** and **the project** are given [here](https://github.com/ianmcloughlin/2425_computer_infrastructure?tab=readme-ov-file#tasks-40).
